@@ -12,3 +12,14 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+// найшла елемент по класу в html
+const galleryArray = document.querySelector("gallery");
+
+// цикл map на перебір масива + добавлення лі через шаблонну строку + зшивання
+const imagesList = images
+  .map(image => `<li class="gallery-item flex-container"><img src="${image.url}" alt="${image.alt}" width="150" heigth="150"</li>`)
+  .join("");
+
+galleryArray.insertAdjacentHTML("beforeend", imagesList);
+
+console.log(galleryArray);
