@@ -20,6 +20,6 @@ const imagesList = images
   .map(image => `<li class="gallery-item flex-container"><img src="${image.url}" alt="${image.alt}" width="150" heigth="150"</li>`)
   .join("");
 
-galleryArray.insertAdjacentHTML("beforeend", imagesList);
+galleryArray.insertAdjacentHTML ('beforeend', imagesList);
 
 console.log(galleryArray);

@@ -23,8 +23,9 @@ button {
   cursor: pointer;
 }
 gallery-item {
-
+align-items: center;
 }
 flex-container {
-  
+  flex-wrap: wrap;
+  background-color: antiquewhite;
 }
