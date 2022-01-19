@@ -22,10 +22,11 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
-gallery-item {
+.gallery-item {
+display: flex;
 align-items: center;
-}
-flex-container {
-  flex-wrap: wrap;
-  background-color: antiquewhite;
+justify-content: center;
+list-style: none;
+margin-bottom: 10px;
+background-color: rgb(224, 223, 223);
 }
