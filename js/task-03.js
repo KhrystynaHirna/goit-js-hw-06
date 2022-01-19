@@ -15,7 +15,7 @@ const images = [
 
 const galleryArray = document.querySelector(".gallery");
 const imagesList = images
-  .map((image) => `<li class="gallery-item flex-container"><img src=${image.url} alt=${image.alt} width="150" heigth="150"></img></li>`)
+  .map((image) => `<li class="gallery-item"><img src=${image.url} alt=${image.alt} width="150" heigth="150"></img></li>`)
   .join("");
 
 galleryArray.insertAdjacentHTML("beforeend", imagesList);
